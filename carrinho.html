@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mobile - Carrinho</title>
+</head>
+    <style>
+        /* Mobile*/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6 /* espaçamento de linhas */;
+        }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(1, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 250px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .agendar {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                .agendartext {
+                    text-align: center;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                    text-align: center;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        /* --Mobile--*/
+
+        /*Tablet*/
+        @media (min-width: 768px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .image {
+                    width: 200px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                    align-items: center;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        } 
+        /* --Tablet--*/
+
+        /*PC*/
+        @media (min-width: 1024px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+                
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "nav"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 200px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 300px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                    align-items: center;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+            }
+        /* --PC--*/
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+<body>
+    <header>
+  <h1>Loja</h1>
+  <nav>
+    <a href="shop.html">Loja</a>
+    <a href="oficina.html">Reparações</a>
+    <a href="#">Carrinho</a>
+    <a href="conctatos.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+    <h2 class="assist">Infinity Card</h2>
+    <section class="oficina">
+            <div class="caixa">
+                <h3>O teu carrinho</h3>
+                <img class="image"src="https://www.worten.pt/i/98acb96be7b366242d41537065d63ce8efa0021f" alt="Galaxy A16">
+                <h3> Modelo: Galaxy S25</h3>
+                <h3>Capacidade: 512GB</h3>
+                <h3>Cor: Preto</h3>
+                <button class="button">Finalizar a compra</button>
+            </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Infinity Mobile</p>
+</footer>
+ 
+</body>
+</html>

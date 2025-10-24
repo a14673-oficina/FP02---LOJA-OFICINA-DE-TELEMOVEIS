@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mobile - Inicío</title>
+    <style>
+        /* Mobile*/
+        body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 150px;
+                    border-radius: 10px;
+                } 
+
+                .produtos {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                    font-size: 0,7rem;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                     padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        /* --Mobile--*/
+
+        /*Tablet*/
+        @media (min-width: 768px) {
+            body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(3, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 170px;
+                    border-radius: 10px;
+                }
+
+                .produtos {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                     padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        }
+        /* --Tablet--*/
+
+        /*PC*/
+        @media (min-width: 1024px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(4, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 200px;
+                    border-radius: 10px;
+                }     
+
+                .produtos {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                     padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+            }
+        /* --PC--*/
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+   <header>
+  <h1>Loja</h1>
+  <nav>
+    <a href="#">Loja</a>
+    <a href="oficina.html">Reparações</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="conctatos.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+    <section class="produtos">
+        <div class="caixa">
+            <img class="image"src="https://www.worten.pt/i/d3584bcaa5554e018f1d22dc43f23fe11ef6beba" alt="Galaxy A16">
+            <h2>Galaxy A16</h2>
+            <h3>(6.7" - 4GB - 128GB - Preto)</h3>
+            <p>159€</p>
+                <button class="button">Carrinho</button>
+
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/f140865b0b4f315a9c063d3ca47008182cd81d5b" alt="Galaxy A16">
+                <h2>Galaxy A26</h2>
+                <h3>(6.7" - 6GB - 128GB - Preto)</h3>
+                <p>259€</p>
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/ce10eaf7b07e7dece7c9d97de8148a5f1ff2ffad" alt="Galaxy A16">
+                <h2>Galaxy A36</h2>
+                <h3>(6.7" - 6GB - 128GB - Preto)</h3>
+                <h3></h3>
+                <p>399€</p> 
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/0553f96bff83d99967af741068456cf44faa9a34" alt="Galaxy A16">
+                <h2>Galaxy A56</h2>
+                <h3>(6.7" - 8GB - 128GB - Preto)</h3>
+                <p>499€</p>
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/98acb96be7b366242d41537065d63ce8efa0021f" alt="Galaxy A16">
+                <h2>Galaxy S25</h2>
+                <h3>(6.2" - 8GB - 258GB - Preto)</h3>
+                <p>799€</p>
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/8b8bd691ebe10fbd90a23ca446ad49c13ac5d338" alt="Galaxy A16">
+                <h2>Galaxy S23 Ultra</h2>
+                <h3>(6.8" - 16GB - 1TB - Preto)</h3>
+                <p>1499€</p>
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/75a1737ba767a8a80dc0d16d9709efcc2b523ad6" alt="Galaxy A16">
+                <h2>Galaxy S25 Ultra</h2>
+                <h3>(6.8" - 12GB - 512GB - Preto)</h3>
+                <p>1100€</p>
+                <button class="button">Carrinho</button>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://www.worten.pt/i/ab7bd4f7d191c3b1d1c90f4951fd4cbe0859b1a1" alt="Galaxy A16">
+                <h2>Galaxy S24 Ultra</h2>
+                <h3>(6.8" - 8GB - 258GB - Preto)</h3>
+                <p>999€</p>
+                <button class="button">Carrinho</button>
+            </div>
+        </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Infinity Mobile</p>
+</footer>
+ 
+</body>
+</html>

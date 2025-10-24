@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mobile - Conctatos</title>
+</head>
+    <style>
+        /* Mobile*/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6 /* espaçamento de linhas */;
+        }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(1, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 50px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .agendar {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                .agendartext {
+                    text-align: center;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                    text-align: center;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        /* --Mobile--*/
+
+        /*Tablet*/
+        @media (min-width: 768px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .image {
+                    width: 170px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        } 
+        /* --Tablet--*/
+
+        /*PC*/
+        @media (min-width: 1024px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+                
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "nav"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                .morada-box {
+                    border: 1px solid rgb(0, 0, 0);
+                    border-radius: 20px;
+                    padding: 10px;
+                    background-color: rgb(172, 171, 171);
+                    text-align: center;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 200px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 300px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+            }
+        /* --PC--*/
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+<body>
+    <header>
+  <h1>Loja</h1>
+  <nav>
+    <a href="shop.html">Loja</a>
+    <a href="oficina.html">Reparações</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<main>
+    <h2 class="assist">Precisa de Assistência Técnica?</h2>
+    <section class="oficina">
+            <div class="morada-box">
+                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.5302656296067!2d-8.4060603!3d41.5577669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24fe9a1f9f463f%3A0x5d96d27c7a177625!2sBraga%20Parque!5e0!3m2!1spt-PT!2spt!4v1761296930992!5m2!1spt-PT!2spt" style="border:0"; allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="caixa">
+                <h3>Infinity Mobile 1º Avenida</h3>
+                <p>Bairro da Quinta dos Congregados, 4710-427 Braga</p>
+                <p><a href="tel: 937 367 276"> TEL: 937 367 276</a></p>
+                <p><a href="mailto:1avenida@infinitymobile.pt">Email: 1avenida@infinitymobile.pt</a></p>
+                <p>Horário: Domingo a Quinta das 10h ás 22h / Sexta e Sábado das 10h ás 23h</p>
+            </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Infinity Mobile</p>
+</footer>
+ 
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Mobile - Oficina</title>
+    <style>
+        /* Mobile*/
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6 /* espaçamento de linhas */;
+        }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(2, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 50px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                    font-size: 0.7rem;
+                }
+
+                .agendar {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                .agendartext {
+                    text-align: center;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                    text-align: center;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                    padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        /* --Mobile--*/
+
+        /*Tablet*/
+        @media (min-width: 768px) {
+            body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+            }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(4, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .imagelap {
+                    width: 140px;
+                    border-radius: 10px;
+                }
+
+                .image {
+                    width: 170px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                     padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+        }
+        /* --Tablet--*/
+
+        /*PC*/
+        @media (min-width: 1024px) {
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    line-height: 1.6 /* espaçamento de linhas */;
+                }
+
+                .pagina {
+                    display: grid;
+                    grid-template-areas:
+                        "header"
+                        "nav"
+                        "main"
+                        "footer";
+                    grid-template-columns: repeat(5, 1fr);
+                    min-height: 100vh;
+                }
+
+                header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #000000;
+                    color: white;
+                    padding: 15px 30px;
+                    border-radius: 20px;
+                }
+
+                
+
+                header nav a {
+                    color: white;
+                    margin-left: 20px;
+                    text-decoration: none;
+                }
+
+                .image {
+                    width: 200px;
+                    border-radius: 10px;
+                }
+
+                .imagelap {
+                    width: 300px;
+                    border-radius: 10px;
+                }
+
+                .assist {
+                    text-align: center;
+                }
+
+                .oficina {
+                    display: grid;
+                    grid-template-columns: repeat(5, 1fr);
+                    gap: 20px;
+                    padding: 40px;
+                    background: #cacaca;
+                    text-align: center;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                }
+
+                .button {
+                    background: rgb(224, 224, 224);
+                    border: 1px solid #000000;
+                    border-radius: 10px;
+                    padding: 7px;
+                    color: black;
+                }
+
+                .caixa {
+                    background: rgb(172, 171, 171);
+                    border: 1px solid #333333;
+                    border-radius: 30px;
+                     padding: 20px;
+                }
+
+                footer {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #000000;
+                    color: rgb(255, 255, 255);
+                    padding: 10px;
+                     border-radius: 20px;
+                }
+            }
+        /* --PC--*/
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+   <header>
+  <h1>Loja</h1>
+  <nav>
+    <a href="shop.html">Loja</a>
+    <a href="#">Reparações</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="conctatos.html">Contacto</a>
+  </nav>
+</header>
+
+<main>
+    <h2 class="assist">Precisa de Assistência Técnica?</h2>
+    <section class="oficina">
+            <div class="caixa">
+                <img class="image"src="https://r.iservices.pt/common/products/1716293492-small.png" alt="Galaxy A16">
+                <h2>Telemovel</h2>
+            </div>
+
+            <div class="caixa">
+                <img class="imagelap"src="https://images.samsung.com/is/image/samsung/p6pim/br/np750xgj-kg1br/gallery/br-galaxy-book4-156-inch-np750xgka-np750xgj-kg1br-thumb-540336075" alt="Galaxy A16">
+                <h2>PC / Laptops</h2>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://r.iservices.pt/common/products/1685550772.webp" alt="Galaxy A16">
+                <h2>Tablets</h2>
+            </div>
+
+            <div class="caixa">
+                <img class="image"src="https://r.iservices.pt/common/products/1143-galaxy-watch-6-44mm.png" alt="Galaxy A16">
+                <h2>SmartWatch</h2>
+            </div>
+
+            <div class="caixa">
+                <img class="imagelap"src="https://conteudos.meo.pt/catalogo/isell/acessorios/samsung-galaxy-buds3-pro/samsung-galaxy-buds3-pro-grafite-caixa-meo.png" alt="Galaxy A16">
+                <h2>Som</h2>
+            </div>
+    </section>
+    <div class="agendar">
+        <h2 class="agendartext">Agendar Reparação</h2>
+        <p class="button">Aqui</p>
+    </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Infinity Mobile</p>
+</footer>
+ 
+</body>
+</html>
